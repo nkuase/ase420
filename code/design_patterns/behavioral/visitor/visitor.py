@@ -1,16 +1,22 @@
 # interface
 class Visitable(object):
-  def accept(self, visitor): pass
+    def accept(self, visitor): pass
+
+
 class Visitor(object):
-  def visit(self, element): pass
+    def visit(self, element): pass
 
 # Implementations
+
+
 class Room(Visitable):
     def __init__(self, size):
         self.size = size
+
     def accept(self, visitor):
-        visitor.visitRoom(self)
- 
+        visitor.visit(self)
+
+
 class House(Visitable):
     def __init__(self, roomSizes):
         self.rooms = []
@@ -21,19 +27,20 @@ class House(Visitable):
     def accept(self, visitor):
         visitor.visit(self)
 
+
 class Visitor(Visitor):
     def __init__(self):
         self.totalSize = 0
 
-    def visit(self, house):
-        self.totalSize = 0 # make sure the initial size is 0
-        # get the size of rooms
-        for room in house.rooms:
-            room.accept(self)
-    def visitRoom(self, room): # should have been visit with Java
-        self.totalSize += room.size
+    def visit(self, ref):
+        if type(ref) == House:
+            self.totalSize = 0  # make sure the initial size is 0
+            # get the size of rooms
+            for room in house.rooms:
+                room.accept(self)
+        else:
+            self.totalSize += ref.size
 
-# Driver
 
 roomSizes = [200, 300, 500]
 kitchenSize = 400
@@ -41,4 +48,4 @@ house = House(roomSizes)
 visitor = Visitor()
 visitor.visit(house)
 
-print(visitor.totalSize) # 200 + 300 + 500 = 1000
+print(visitor.totalSize)  # 200 + 300 + 500 = 1000
