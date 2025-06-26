@@ -168,7 +168,6 @@ def initialize(height, width):
     Width = width
     Field = []
     State = "start"
-    # code smell - why another initializion in the initalize() function?
     init_board()
 
 def main():
