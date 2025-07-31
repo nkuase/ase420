@@ -1,0 +1,4 @@
+a@example.com=Hiroshi Yuki
+b@example.com=John Deacon
+c@example.com=Freddie Mercury
+d@example.com=Brian May
