@@ -1,9 +1,10 @@
 from book import Book
 from book_shelf_iterator import BookShelfIterator
+from interfaces.abstract_book_shelf import AbstractBookShelf
 
-class BookShelf():
+class BookShelf(AbstractBookShelf):
   def __init__(self, max_size: int):
-    self._books: List[Book] = [None] * max_size  # Fixed-size array like Java
+    self._books = [None] * max_size  # Fixed-size array like Java
     self._last = 0  # Index of the next available position
     self._max_size = max_size
   

@@ -13,8 +13,6 @@ def main():
     
     print(f"Created {book_shelf}\n")
     
-    # Method 1: Using explicit iterator (similar to Java example)
-    print("1. Using explicit iterator:")
     it = book_shelf.iterator()
     while it.has_next():
         book = it.next()

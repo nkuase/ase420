@@ -1,6 +1,7 @@
 from book import Book
+from interfaces.abstract_shelf_iterator import AbstractIterator
 
-class BookShelfIterator:
+class BookShelfIterator(AbstractIterator):
   def __init__(self, book_shelf):
     self._book_shelf = book_shelf
     self._index = 0
