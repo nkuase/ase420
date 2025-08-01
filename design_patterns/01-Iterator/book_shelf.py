@@ -1,7 +1,7 @@
 from book import Book
 from book_shelf_iterator import BookShelfIterator
 
-class BookShelf:
+class BookShelf():
   def __init__(self, max_size: int):
     self._books: List[Book] = [None] * max_size  # Fixed-size array like Java
     self._last = 0  # Index of the next available position
