@@ -1,0 +1,2 @@
+a@example.com=Freddie Mercury
+b@example.com=John Deacon

@@ -1,0 +1,4 @@
+#
+Hiroshi\ Yuki=hyuki@example.com
+Tomura=tomura@example.com
+Hanako\ Sato=hanako@example.com
