@@ -1,161 +1,261 @@
+.gitignore.backup.*
+
+############################################
+# OS / Editor / IDE generated files
+############################################
+
+# macOS
 .DS_Store
-# Byte-compiled / optimized / DLL files
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+############################################
+# Logs & temporary files
+############################################
+
+# Log files
+*.log
+logs/
+log/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+############################################
+# Dependency directories
+############################################
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+.env/
+.venv/
+venv/
 
-# C extensions
-*.so
+# PHP / Composer
+vendor/
 
-# Distribution / packaging
-.Python
+# Ruby
+.bundle/
+vendor/bundle/
+
+############################################
+# Build / distribution outputs
+############################################
+
+# General build output
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
+out/
 target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.class
 
-# IPython
-profile_default/
-ipython_config.py
+############################################
+# Environment & secrets (VERY IMPORTANT)
+############################################
 
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
+# Environment variable files
 .env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+.env.*
+!.env.example
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# Credentials & secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.keystore
+secrets/
+credentials/
 
-# Rope project settings
-.ropeproject
+############################################
+# Database & runtime data
+############################################
 
-# mkdocs documentation
-/site
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# Runtime-generated data
+data/
+storage/
+cache/
 
-# Pyre type checker
-.pyre/
+############################################
+# Docker
+############################################
 
-# pytype static type analyzer
-.pytype/
+# Docker runtime files
+docker-compose.override.yml
+.env.docker
 
-# Cython debug symbols
-cython_debug/
+############################################
+# Testing & coverage
+############################################
 
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+
+# Test result artifacts
+test-results/
+junit.xml
+
+############################################
+# Documentation build artifacts
+############################################
+
+# Generated docs
+docs/_build/
+site/
+public/
+
+############################################
+# Flutter / Dart (ASE456 Mobile Dev)
+############################################
+
+# Flutter/Dart Tool files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# Build outputs
+*.ap_
+*.aab
+
+############################################
+# iOS (Flutter iOS builds)
+############################################
+
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcworkspace
+*.xcuserdata
+Pods/
+ios/.symlinks/
+ios/Flutter/.last_build_id
+
+############################################
+# Android (Flutter Android builds)
+############################################
+
+*.apk
+local.properties
+.gradle/
+gradle-wrapper.jar
+captures/
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+############################################
+# JavaScript / TypeScript / React
+############################################
+
+# Build outputs
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# Lock files (optional - depends on team policy)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+############################################
+# Java
+############################################
+
+gradle/
+gradlew
+gradlew.bat
+
+############################################
+# Laravel / PHP specific (ASE230)
+############################################
+
+bootstrap/cache/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/logs/
+.phpunit.result.cache
+
+############################################
+# Educational / Student Work
+############################################
+
+# Student submissions (if collecting via Git)
+submissions/
+student-work/
+
+# Auto-grader outputs
+grading-results/
+
+############################################
+# Misc
+############################################
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Backup files
+*.bak
+*.old
+*.orig
