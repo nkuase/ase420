@@ -1,1 +1,0 @@
-# Factory package for Abstract Factory pattern

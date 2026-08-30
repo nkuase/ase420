@@ -1,2 +1,0 @@
-# PyQt6 Mediator Pattern Example Requirements
-PyQt6>=6.6.0

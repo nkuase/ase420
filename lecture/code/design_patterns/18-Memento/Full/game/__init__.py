@@ -1,1 +1,0 @@
-# Game package for Memento pattern

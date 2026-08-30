@@ -1,2 +1,0 @@
-hyuki@example.com=Hiroshi Yuki
-sato@example.com=Sato Hanako

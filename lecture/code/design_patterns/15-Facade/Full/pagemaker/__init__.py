@@ -1,1 +1,0 @@
-# PageMaker package for Facade pattern

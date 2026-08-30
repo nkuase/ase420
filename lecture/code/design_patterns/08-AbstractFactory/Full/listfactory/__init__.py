@@ -1,1 +1,0 @@
-# List factory implementation for Abstract Factory pattern
