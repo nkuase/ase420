@@ -1,12 +1,12 @@
 class Employee:
-    def __init__(self, first_name, last_name, salary, shift):
+    def __init__(self, last_name, first_name, salary, shift=None):
         self._first_name = first_name
         self._last_name = last_name
         self.salary = salary
         self.shift = shift
 
     def get_full_name(self):
-        return f"{self._first_name} {self._last_name}"
+        return f"{self._last_name},{self._first_name}"
 
     def raise_salary(self, factor):
         self.salary = self.salary * factor

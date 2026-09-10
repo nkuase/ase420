@@ -14,11 +14,11 @@ class StaffingReport(Report):
     print("Staffing")
     print("========")
     for e in self._emp_list:
-      print(f"{e.get_full_name()}, ${e.salary}")
+      print(f"{e.get_full_name()}, {e.job_title}")
           
 class ScheduleReport(Report):
   def print_report(self):
-    print("Staffing")
+    print("Schedule")
     print("========")
     for e in self._emp_list:
       print(f"{e.get_full_name()}, {e.start_time:%H:%M} to {e.end_time:%H:%M}")        

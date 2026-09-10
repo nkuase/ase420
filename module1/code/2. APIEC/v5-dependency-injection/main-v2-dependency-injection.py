@@ -2,14 +2,14 @@ from employee import Manager, Attendant, Cook, Mechanic
 from reporting_v2 import AccountingReport, StaffingReport
 
 employees = [
-    Manager ("Vera", "Schmidt", 2000),
-    Attendant ("Chuck", "Norris", 1800),
-    Attendant ("Samantha", "Carrington", 1800),
-    Cook ("Roberto", "Jacketti", 2100),
-    Mechanic ("Dave", "Dreißig", 2200),
-    Mechanic("Tina", "River", 2300),
-    Mechanic ("Ringo", "Rama", 1900),
-    Mechanic ("Chuck", "Rainey", 1800) ,
+    Manager("Schmidt", "Vera", 2000),
+    Attendant("Norris", "Chuck", 1800),
+    Attendant("Carrington", "Samantha", 1800),
+    Cook("Jacketti", "Roberto", 2100),
+    Mechanic("Dreißig", "Dave", 2200),
+    Mechanic("River", "Tina", 2300),
+    Mechanic("Rama", "Ringo", 1900),
+    Mechanic("Rainey", "Chuck", 1800),
 ]
 
 accounting_report = AccountingReport(employees)
@@ -22,23 +22,23 @@ staffing_report.print_staffing_report()
 """
 Accounting
 ==========
-Vera,Schmidt, $2000
-Chuck,Norris, $1800
-Samantha,Carrington, $1800
-Roberto,Jacketti, $2100
-Dave,Dreißig, $2200
-Tina,River, $2300
-Ringo,Rama, $1900
-Chuck,Rainey, $1800
+Schmidt,Vera, $2000
+Norris,Chuck, $1800
+Carrington,Samantha, $1800
+Jacketti,Roberto, $2100
+Dreißig,Dave, $2200
+River,Tina, $2300
+Rama,Ringo, $1900
+Rainey,Chuck, $1800
 
 Staffing
 ========
-Vera,Schmidt, $2000
-Chuck,Norris, $1800
-Samantha,Carrington, $1800
-Roberto,Jacketti, $2100
-Dave,Dreißig, $2200
-Tina,River, $2300
-Ringo,Rama, $1900
-Chuck,Rainey, $1800
+Schmidt,Vera, Manager
+Norris,Chuck, Station Attendant
+Carrington,Samantha, Station Attendant
+Jacketti,Roberto, Cook
+Dreißig,Dave, Mechanic
+River,Tina, Mechanic
+Rama,Ringo, Mechanic
+Rainey,Chuck, Mechanic
 """

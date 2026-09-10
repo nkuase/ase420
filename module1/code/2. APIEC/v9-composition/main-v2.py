@@ -5,17 +5,17 @@ from employee import Mechanic
 from reporting import AccountingReport
 from reporting import StaffingReport
 from reporting import ScheduleReport
-from shift_v1 import MorningShift, AfternoonShift, NightShift
+from shift_v2 import MorningShift, AfternoonShift, NightShift
 
 employees = [
-    Manager("Vera", "Schmidt", 2000, MorningShift()),
-    Attendant("Chuck", "Norris", 1800, MorningShift()),
-    Attendant("Samantha", "Carrington", 1800, AfternoonShift()),
-    Cook("Roberto", "Jacketti", 2100, MorningShift()),
-    Mechanic("Dave", "Dreissig", 2200, MorningShift()),
-    Mechanic("Tina", "Rivers", 2300, MorningShift()),
-    Mechanic("Ringo", "Rama", 1900, AfternoonShift()),
-    Mechanic("Chuck", "Rainey", 1800, NightShift()),
+    Manager("Schmidt", "Vera", 2000, MorningShift()),
+    Attendant("Norris", "Chuck", 1800, MorningShift()),
+    Attendant("Carrington", "Samantha", 1800, AfternoonShift()),
+    Cook("Jacketti", "Roberto", 2100, MorningShift()),
+    Mechanic("Dreissig", "Dave", 2200, MorningShift()),
+    Mechanic("Rivers", "Tina", 2300, MorningShift()),
+    Mechanic("Rama", "Ringo", 1900, AfternoonShift()),
+    Mechanic("Rainey", "Chuck", 1800, NightShift()),
 ]
 
 reports = [

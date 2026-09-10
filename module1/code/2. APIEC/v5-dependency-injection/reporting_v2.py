@@ -16,4 +16,4 @@ class StaffingReport:
         print("Staffing")
         print("========")
         for e in self._emp_list:
-            print(f"{e.get_full_name()}, ${e.salary}")
+            print(f"{e.get_full_name()}, {e.job_title}")

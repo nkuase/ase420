@@ -6,7 +6,7 @@ class Shift:
 
 class MorningShift(Shift):
     start_time = datetime.time(8, 00)
-    end_time = datetime.time(16, 00)
+    end_time = datetime.time(14, 00)
 
 class AfternoonShift(Shift):
     start_time = datetime.time(12, 00)

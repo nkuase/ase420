@@ -4,10 +4,15 @@ from employee import Employee
 
 class TestEmployee(unittest.TestCase):
     def test_get_full_name(self):
-        e = Employee("Vera", "Schmidt", 0, None)
-        self.assertEqual(e.get_full_name(), "Vera Schmidt")
+        e = Employee("Doe", "John", 50000)
+        self.assertEqual(e.get_full_name(), "Doe,John")
 
     def test_raise_salary(self):
-        e = Employee("", "", 2000, None)
+        e = Employee("Smith", "Jane", 2000)
         e.raise_salary(1.1)
-        self.assertEqual(e.salary, 2200)
+        self.assertAlmostEqual(e.salary, 2200.0)
+
+    def test_zero_raise(self):
+        e = Employee("Jones", "Bob", 3000)
+        e.raise_salary(1.0)
+        self.assertEqual(e.salary, 3000)

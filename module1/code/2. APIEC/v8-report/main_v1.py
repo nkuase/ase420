@@ -3,14 +3,14 @@ from reporting_v1 import AccountingReport, StaffingReport, ScheduleReport
 import datetime
 
 employees = [
-    Manager("Vera", "Schmidt", 2000, datetime.time(8,00), datetime.time(14,00)),
-    Attendant("Chuck", "Norris", 1800, datetime.time(8,00), datetime.time (14,00)),
-    Attendant("Samantha", "Carrington", 1800, datetime.time(12,00), datetime.time (20,00)),
-    Cook("Roberto", "Jacketti", 2100, datetime.time (8,00) , datetime.time(14,00)),
-    Mechanic("Dave", "Dreißig", 2200, datetime.time(8,00), datetime.time (14,00)),
-    Mechanic("Tina", "River", 2300, datetime.time(8,00) , datetime.time(14,00)),
-    Mechanic("Ringo", "Rama", 1900, datetime.time(12,00), datetime.time (20,00)),
-    Mechanic("Chuck", "Rainey", 1800, datetime.time(12,00), datetime.time (20,00)),
+    Manager("Schmidt", "Vera", 2000, datetime.time(8, 0), datetime.time(14, 0)),
+    Attendant("Norris", "Chuck", 1800, datetime.time(8, 0), datetime.time(14, 0)),
+    Attendant("Carrington", "Samantha", 1800, datetime.time(12, 0), datetime.time(20, 0)),
+    Cook("Jacketti", "Roberto", 2100, datetime.time(8, 0), datetime.time(14, 0)),
+    Mechanic("Dreißig", "Dave", 2200, datetime.time(8, 0), datetime.time(14, 0)),
+    Mechanic("River", "Tina", 2300, datetime.time(8, 0), datetime.time(14, 0)),
+    Mechanic("Rama", "Ringo", 1900, datetime.time(12, 0), datetime.time(20, 0)),
+    Mechanic("Rainey", "Chuck", 1800, datetime.time(12, 0), datetime.time(20, 0)),
 ]
 
 reports = [
@@ -26,14 +26,14 @@ for report in reports:
 """
 ...
 
-Staffing
+Schedule
 ========
-Vera,Schmidt, 08:00 to 14:00
-Chuck,Norris, 08:00 to 14:00
-Samantha,Carrington, 12:00 to 20:00
-Roberto,Jacketti, 08:00 to 14:00
-Dave,Dreißig, 08:00 to 14:00
-Tina,River, 08:00 to 14:00
-Ringo,Rama, 12:00 to 20:00
-Chuck,Rainey, 12:00 to 20:00
+Schmidt,Vera, 08:00 to 14:00
+Norris,Chuck, 08:00 to 14:00
+Carrington,Samantha, 12:00 to 20:00
+Jacketti,Roberto, 08:00 to 14:00
+Dreißig,Dave, 08:00 to 14:00
+River,Tina, 08:00 to 14:00
+Rama,Ringo, 12:00 to 20:00
+Rainey,Chuck, 12:00 to 20:00
 """

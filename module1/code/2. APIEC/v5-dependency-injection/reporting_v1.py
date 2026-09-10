@@ -10,4 +10,4 @@ class StaffingReport:
         print("Staffing")
         print("========")
         for e in employees:
-            print(f"{e.get_full_name()}, ${e.salary}")
+            print(f"{e.get_full_name()}, {e.job_title}")

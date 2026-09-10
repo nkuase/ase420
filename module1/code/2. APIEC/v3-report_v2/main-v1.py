@@ -1,8 +1,4 @@
-# rename employee to either employee-v1 or employee-v2-familyname to run the code
-from employee import Manager
-from employee import Attendant
-from employee import Cook
-from employee import Mechanic
+from employee_v1 import Manager, Attendant, Cook, Mechanic
 
 employees = [
     Manager("Vera", 2000),
