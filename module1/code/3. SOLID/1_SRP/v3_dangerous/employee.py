@@ -1,10 +1,11 @@
 import jsonlibrary
 
+# SRP VIOLATION:
+# Employee is coupled to external serialization framework via decorator
+@jsonlibrary.jsonserializable
 class Employee: 
     def __init__(self, name, salary):
-        @jsonserializable
         self.name = name
-        @jsonserializable
         self.salary = salary
         
     def raise_salary(self, factor):

@@ -4,7 +4,7 @@ class IProduct(metaclass=ABCMeta):
     "A Hypothetical Class Interface (Product)"
 
     @abstractmethod
-    def create_object():
+    def create_object(self):
         "An abstract interface method"
         
 class Product(IProduct):

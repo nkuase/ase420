@@ -1,1 +1,4 @@
-This is just for the idea of RSP, you can't execute the program files. 
+This version demonstrates an SRP code smell:
+To persist data with an external framework (simulated by jsonlibrary),
+the Employee domain class was modified to import jsonlibrary and use @jsonlibrary.jsonserializable.
+This couples Employee directly to a third-party persistence dependency, violating SRP. 

@@ -1,15 +1,18 @@
 import jsonlibrary
 
+# Dedicated serialization DTO/adapter holding framework decorators
+@jsonlibrary.jsonserializable
 class JsonEmployee: 
     def __init__(self, name, salary):
-        @jsonserializable
         self.name = name
-        @jsonserializable
         self.salary = salary
 
 class EmployeeStorage:
     json_filename = "emp.json"
+
     def save_as_json(self, employee):
-        with open(self.json_filename, "w") as file:
-            jsonlibrary.save(f"name: {employee. name}, salary: {employee.salary}")
+        # Decoupled: converts domain Employee into JsonEmployee DTO.
+        # Employee remains untouched and completely free of jsonlibrary dependencies!
+        json_emp = JsonEmployee(employee.name, employee.salary)
+        jsonlibrary.save(self.json_filename, json_emp)
 

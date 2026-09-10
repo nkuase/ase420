@@ -3,7 +3,8 @@ class Employee:
         self.employee_id = employee_id
         self.name = name
     def is_employee_id_valid(self):
-        return self. employee_id > 0
+        # type() is int is used instead of isinstance() to strictly reject bool (bool subclasses int)
+        return type(self.employee_id) is int and self.employee_id > 0
         
 class Intern(Employee):
     def __init__(self, employee_id, name):

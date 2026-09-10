@@ -2,8 +2,8 @@ from abc import ABCMeta, abstractmethod
 
 class IPrinter(metaclass=ABCMeta):
   @abstractmethod
-  def print_receipt(self): 
-      "interface methd"
+  def print_receipt(self, receipt_text): 
+      "interface method"
 
 class CashRegisterPrinter(IPrinter):
     def print_receipt(self, receipt_text):

@@ -1,1 +1,4 @@
-This is just for the idea of RSP, you can't execute the program files. 
+This version demonstrates the complete SRP decoupling:
+Instead of coupling Employee to jsonlibrary, we introduce a dedicated JsonEmployee adapter/DTO.
+Employee remains pure domain logic, while EmployeeStorage converts Employee to JsonEmployee
+and uses jsonlibrary to save the data. 

@@ -1,2 +1,2 @@
-The files have old python code, so it won't compile for new python interpreters. 
-This is for explanation purposes. 
+In this version, storage is separated from Employee into EmployeeStorage following SRP.
+EmployeeStorage uses Python's standard json library to persist employee data into emp.json. 
